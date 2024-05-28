@@ -63,4 +63,15 @@ body {
   background-color: violet;
 }
 
+.ListaBasica .inline-list {
+  display: inline;
+  list-style-type: none;
+  padding: 60px 60px 60px 60px;
+}
+.ListaBasica .inline-list li {
+  padding: 60px 60px 60px 60px;
+  display: inline;
+  margin-right: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
