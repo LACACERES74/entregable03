@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0%;
 }
-body{
+
+body {
     background-color: blueviolet;
 }
 
@@ -28,48 +29,95 @@ nav ul li a {
     font-family: Arial, Helvetica, sans-serif;
 }
 
- h1{ margin: 15;
-    color: white;    
- }
-  h2{margin: 15;
-    color: white;  
-  }
+h1 {
+    margin: 15;
+    color: white;
+}
+
+h2 {
+    margin: 15;
+    color: white;
+}
 
 
-  .img {
+.img {
     margin-top: 350px;
-    display: flex;  
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
+    justify-content: center;
     padding: auto;
+}
+
+p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h3 {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+ul{
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+}
+ul li {
+    
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+   display:block;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer {
+    display: flex;
+
+    color: white;
+    padding: 20px 20px 20px 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-toggle {
+    display: none;
+    /* Ocultar el botón hamburguesa por defecto en dispositivos grandes */
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        /* Mostrar el botón hamburguesa en dispositivos móviles */
+        cursor: pointer;
     }
 
-    p{color: white;
-        font-family: Arial, Helvetica, sans-serif;
-
+    .nav-menu {
+        display: none;
+        /* Ocultar el menú desplegable por defecto en dispositivos móviles */
     }
 
-    h3{margin: auto;
-        display: flex;
-        justify-content: center;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-
+    .hamburger {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px 0;
     }
 
-    ul li{ color: white;
-        font-family: Arial, Helvetica, sans-serif;
-       display: block;
-        justify-content: center;
-
+    .hamburger:before,
+    .hamburger:after {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px 0;
     }
-
-    footer {
-        display: flex;
-        
-        color: white;
-        padding: 20px 20px 20px 20px;
-        align-items: center;
-        justify-content: space-evenly;
-        font-family: Arial, Helvetica, sans-serif;
-      }
+}

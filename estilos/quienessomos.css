@@ -66,3 +66,35 @@ footer {
         font-family: Arial, Helvetica, sans-serif;
       
   }
+
+  .menu-toggle {
+    display: none; /* Ocultar el botón hamburguesa por defecto en dispositivos grandes */
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block; /* Mostrar el botón hamburguesa en dispositivos móviles */
+      cursor: pointer;
+    }
+  
+    .nav-menu {
+      display: none; /* Ocultar el menú desplegable por defecto en dispositivos móviles */
+    }
+  
+    .hamburger {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      margin: 5px 0;
+    }
+  
+    .hamburger:before,
+    .hamburger:after {
+      content: '';
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      margin: 5px 0;
+    }
+  }

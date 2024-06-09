@@ -4,7 +4,10 @@
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(238, 140, 140);
+
+
 }
 
 header {
@@ -30,28 +33,40 @@ nav ul li a {
 }
 
 h1 {
+    display: flex;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
+    display: flex;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-formulario{display: flex;
+.imagen{
+    padding: 50px 50px;
+    display: inline-block;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    width: 400px;
-    padding: 30px;
 
-    
+    display: flex;
 }
+
+.formulario {
+    padding: 50px 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
 form {
     label {
         display: flex;
         justify-content: center;
-        display: block;
+
         margin-bottom: 10px;
     }
 
@@ -82,11 +97,43 @@ form {
 
 footer {
     display: flex;
-    
+
     color: white;
     padding: 20px 20px 20px 20px;
     align-items: center;
     justify-content: space-evenly;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-toggle {
+    display: none; /* Ocultar el botón hamburguesa por defecto en dispositivos grandes */
   }
   
+  @media only screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block; /* Mostrar el botón hamburguesa en dispositivos móviles */
+      cursor: pointer;
+    }
+  
+    .nav-menu {
+      display: none; /* Ocultar el menú desplegable por defecto en dispositivos móviles */
+    }
+  
+    .hamburger {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      margin: 5px 0;
+    }
+  
+    .hamburger:before,
+    .hamburger:after {
+      content: '';
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      margin: 5px 0;
+    }
+  }
+   
